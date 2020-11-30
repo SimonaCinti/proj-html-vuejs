@@ -15,7 +15,12 @@ var app = new Vue({
             },
             {
                 name: 'Shop',
-                link: 'https://www.google.com/',
+                subMenu: [
+                    {
+                        nameMenu: 'lorem'
+
+                    },
+                ],
             },
             {
                 name: 'About',

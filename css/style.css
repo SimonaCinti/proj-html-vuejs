@@ -78,11 +78,16 @@ nav {
 
 /* Header | Nav Bottom */
 
-.menu {
+.container-nav .menu {
     flex-basis: 80%;
 }
 
-.menu li {
+.container-nav .menu li {
     display: flex;
     margin-left: 40px;
+}
+
+.container-nav .menu i{
+    font-size: 13px;
+    margin-left: 10px;
 }
