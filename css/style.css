@@ -16,10 +16,21 @@ body {
 
 h1 {
     font-family: 'Trocchi', serif;
-    margin: 25px auto;
+    margin: 50px auto;
     font-size: 40px;
 }
 
+/* Utilities */
+
+.btn-white {
+    color: black;
+    padding: 15px 10px;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
 /* Header  | nav container*/
 
@@ -178,4 +189,4 @@ nav {
     text-transform: uppercase;
 }
 
-
+/* Jumbotron | Footer */
