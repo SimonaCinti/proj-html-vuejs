@@ -19,8 +19,6 @@ nav {
     margin: auto;
 }
 
-/* Typography */
-
 /* Header | Nav Top */
 
 .nav-top {
@@ -76,4 +74,15 @@ nav {
 
 .shopping-icon i:first-child {
     margin-right: 10px;
+}
+
+/* Header | Nav Bottom */
+
+.menu {
+    flex-basis: 80%;
+}
+
+.menu li {
+    display: flex;
+    margin-left: 40px;
 }

@@ -43,8 +43,10 @@
             </nav>
             <!-- Nav Bottom-->
             <nav>
-                <div class="container-nav">
-                    
+                <div class="container-nav ">
+                    <ul class="menu flex justify-center">
+                        <li v-for="section in sections"><a v-show="section.link !==''" :href="section.link">{{section.name}}</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
