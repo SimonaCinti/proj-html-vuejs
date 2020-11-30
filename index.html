@@ -46,7 +46,7 @@
                 <div class="container-nav ">
                     <ul class="menu flex justify-center">
                         <li v-for="(section,index) in sections">
-                            <a v-show="section.link !==''" :href="section.link">
+                            <a :href="section.link">
                                 {{section.name}}
                                  <i v-for="menu in sections[index].subMenu" class="fas fa-chevron-down"></i>  
                             </a>
@@ -55,6 +55,34 @@
                     </ul>
                 </div>
             </nav>
+            <!-- Jumbotron -->
+            <section class="jumbotron">
+                <!-- Jumbotron introduction text -->
+                <div class="jumbotron-introduction flex">
+                    <div class="jumbo-text">
+                        <i class="far fa-map"></i>
+                       <p> <span class="bold">International Shipping Services</span> </p> 
+                    </div>
+                    <div class="jumbo-text">
+                        <i class="far fa-clock"></i>
+                        <p>See our <span class="bold">store hours</span>  and services</p> 
+                    </div>
+                    <div class="jumbo-text">
+                        <i class="fas fa-check"></i>
+                        <p>We price match to give you <span class="bold">the best deals</span></p>  
+                    </div>  
+                </div>
+                <!-- Jumbotron main title -->
+                <div class="main-title">
+                    <div class="title">
+                        <p>Find the best animal Supplies</p>
+                        <h1>We know animals are a part of your family, let us help take care of them.</h1>
+                        <div class="button-white">Learn more about us</div>
+                    </div>
+                </div>
+            </section>
+           
+            
         </header>
         
     </div>
