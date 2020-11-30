@@ -48,10 +48,9 @@
                         <li v-for="(section,index) in sections">
                             <a v-show="section.link !==''" :href="section.link">
                                 {{section.name}}
+                                 <i v-for="menu in sections[index].subMenu" class="fas fa-chevron-down"></i>  
                             </a>
-                            <div v-for="menu in sections[index].subMenu">
-                              <i class="fas fa-chevron-down"></i>  
-                            </div>  
+                             
                         </li>
                     </ul>
                 </div>

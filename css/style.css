@@ -85,9 +85,19 @@ nav {
 .container-nav .menu li {
     display: flex;
     margin-left: 40px;
+    cursor: pointer;
+    color: #737373;
 }
 
+.container-nav .menu li a:focus{
+    color: black;
+}
+
+.container-nav .menu li a {
+    text-decoration: none;
+    color: inherit;
+}
 .container-nav .menu i{
     font-size: 13px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
