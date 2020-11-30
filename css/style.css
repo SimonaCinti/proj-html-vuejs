@@ -6,32 +6,74 @@ box-sizing: border-box;
 
 body {
     font-family: 'Work Sans', sans-serif; 
-    background-color: khaki; /*!debug*/
 }
 
-/* Header */
-header {
+/* Header  | nav container*/
+
+nav {
+    border-bottom: 1px solid #978f88;
+}
+
+.container-nav {
     width: 90%;
-    height: 100vh;
-    background-color: lawngreen;  /*!debug*/
     margin: auto;
 }
 
 /* Typography */
 
-
 /* Header | Nav Top */
 
 .nav-top {
-    border-bottom: 1px solid #978f88;
     padding: 10px 0;
     align-items: center;
 }
 
-.nav-top .logo {
-    width: 200px;
+.box {
+    width: 33%;
+    display: flex;
+    justify-content: center;
 }
 
-.logo img {
+.box.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box input {
     width: 100%;
+    padding: 10px 0 10px 30px;
+    border-radius: 100px;
+    background-color: #f3f4f3;
+    outline: none;
+    border: none;
+}
+
+.box.input {
+    position: relative;
+}
+
+.box.input i {
+    position: absolute;
+    font-size: 14px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.box.contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box.contact span {
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.shopping-icon {
+    margin-left: 20px;
+    padding-left: 40px;
+}
+
+.shopping-icon i:first-child {
+    margin-right: 10px;
 }
