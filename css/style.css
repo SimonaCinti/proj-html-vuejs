@@ -6,5 +6,32 @@ box-sizing: border-box;
 
 body {
     font-family: 'Work Sans', sans-serif; 
+    background-color: khaki; /*!debug*/
 }
 
+/* Header */
+header {
+    width: 90%;
+    height: 100vh;
+    background-color: lawngreen;  /*!debug*/
+    margin: auto;
+}
+
+/* Typography */
+
+
+/* Header | Nav Top */
+
+.nav-top {
+    border-bottom: 1px solid #978f88;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.nav-top .logo {
+    width: 200px;
+}
+
+.logo img {
+    width: 100%;
+}
