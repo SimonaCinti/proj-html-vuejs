@@ -6,12 +6,16 @@ var app = new Vue({
         sections: [
             {
                 name: 'Home',
-                // link: 'https://www.google.com/'
+                subMenu: [
+                    {
+                        nameMenu: 'lorem'
 
+                    },
+                ],
             },
             {
                 name: 'Shop',
-                link: 'https://www.google.com/'
+                link: 'https://www.google.com/',
             },
             {
                 name: 'About',
@@ -27,7 +31,12 @@ var app = new Vue({
             },
             {
                 name: 'Shop by brand',
-                link: 'https://www.google.com/'
+                subMenu: [
+                    {
+                        nameMenu: 'lorem'
+
+                    },
+                ],
             },
 
         ]
