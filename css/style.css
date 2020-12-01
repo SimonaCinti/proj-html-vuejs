@@ -16,11 +16,22 @@ body {
 
 h1 {
     font-family: 'Trocchi', serif;
-    margin: 50px auto;
+    margin: 50px 0;
     font-size: 40px;
 }
 
+h2 {
+    font-family: 'Trocchi', serif;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+}
+
 /* Utilities */
+
 
 .btn-white {
     color: black;
@@ -35,12 +46,12 @@ h1 {
 /* Header  | nav container*/
 
 nav {
-    border-bottom: 1px solid #978f88;
+    border-bottom: 1px solid #faf4f4;
 }
 
 .container-nav {
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* Header | Nav Top */
@@ -133,7 +144,6 @@ nav {
 /*  Header | Jumbotron */
 
 .jumbotron {
-    height: 800px;
     background: #1e3020;
     background-image: url("../img/bg-transparent-3.png");
     color: white;
@@ -190,3 +200,33 @@ nav {
 }
 
 /* Jumbotron | Footer */
+.jumbotron-footer{
+    align-items: center;
+    font-size: 18px;
+}
+
+.jumbotron-footer a {
+    color: #dcd5d0;
+    margin-left: 20px;
+}
+
+.jumbotron-footer img {
+    max-width: 15%;
+    margin-right: 20px;
+}
+
+/* MAIN | Browser by Category */
+
+.main-container {
+    width: 90%;
+    margin: 100px auto;
+    position: relative;
+}
+
+.browser-category {
+    width: 60%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
