@@ -425,3 +425,17 @@ nav {
     font-size: 12px;
     margin-right: 5px;
 }
+/* Main | Testimonials */
+
+.testimonials {
+    height: 400px;
+    background:#1e3120;
+    background-image: url("../img/bg-transparent-3.png");
+    background-repeat: repeat-x;
+    text-align: center;
+    color: white;
+}
+
+.user-testimonials {
+    margin-top: 50px;
+}
