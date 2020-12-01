@@ -20,6 +20,10 @@ h1 {
     font-size: 40px;
 }
 
+h2 {
+    font-family: 'Trocchi', serif;
+}
+
 h2, h3 {
     font-size: 32px;
     margin-bottom: 15px;
@@ -318,9 +322,6 @@ nav {
     left: 50%;
     transform: translateX(-50%);
 }
-/*  Main | Category*/
-
-
 
 /*  Main | Food Category */
 
@@ -409,10 +410,18 @@ nav {
     flex-wrap: wrap;
 }
 
-.best-sellers p {
-    color: #2a382a;
+.best-sellers p,
+.best-item p:nth-child(3) {
+    color: #77ab82;
 }
 
 .best-sellers h2{
     flex-basis: 100%;
+}
+
+.best-item:nth-child(3) p:nth-child(3):before {
+    content: '$35.00';
+    text-decoration: line-through;
+    font-size: 12px;
+    margin-right: 5px;
 }
