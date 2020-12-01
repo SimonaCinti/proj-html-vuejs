@@ -86,9 +86,7 @@ p {
 .main-container .category-item, 
 .main-container .best-item {
 	flex-basis: calc(100% / 4 - 10px);
-	text-align: center;
-	border: 1px solid black;
-	
+	text-align: center;	
 }
 
 .main-container .category-item:not(:last-child),
