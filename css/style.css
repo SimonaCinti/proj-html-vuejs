@@ -432,6 +432,7 @@ nav {
 /* Main | Testimonials */
 
 .testimonials {
+    height: 540px;
     background:#1e3120;
     background-image: url("../img/bg-transparent-3.png");
     background-repeat: repeat-x;
@@ -466,3 +467,5 @@ nav {
 .user .avatar  img {
     width: 100%;
 }
+
+/* Main | Join Newsletter */
