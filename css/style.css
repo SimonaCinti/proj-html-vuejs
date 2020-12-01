@@ -218,7 +218,6 @@ nav {
 /* MAIN | Browser by Category */
 
 .main-container {
-    display: flex;
     width: 90%;
     margin: 100px auto 0;
     position: relative;
@@ -233,7 +232,7 @@ nav {
     left: 50%;
     transform: translateX(-50%);
 }
-
+/*  Main | Arrival items */
 .main-container .arrival-item {
     flex-basis: calc(100% / 4);
     text-align: center;
