@@ -547,3 +547,11 @@ nav {
     padding: 10px;
 }
 
+/* MAIN | view all */
+
+.view-all {
+    height: 540px;
+    background:#1e3120;
+    margin-top: 100px;
+    background-image: url("../img/bg-transparent-3.png");
+}
