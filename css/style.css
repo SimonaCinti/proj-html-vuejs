@@ -274,9 +274,11 @@ nav {
 
 .food-item:hover {
     transform: scale(1.1);
+    filter: brightness(120%);
 }
 .food-item:hover .text {
     transform: scale(0.9090909090909091);
+    filter: brightness(80%);
 }
 
 .food-item img {
