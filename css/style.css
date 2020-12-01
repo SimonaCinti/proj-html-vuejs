@@ -62,6 +62,19 @@ p {
     background-color: #2a542a;
 }
 
+/* Template for items x4 */
+
+.main-container .category-item,
+.main-container .best-item {
+    flex-basis: calc(100% / 4);
+    text-align: center;
+}
+
+.category-item img,
+.best-item img {
+    width: 100%;
+}
+
 /* Header  | nav container*/
 
 nav {
@@ -306,14 +319,8 @@ nav {
     transform: translateX(-50%);
 }
 /*  Main | Category*/
-.main-container .category-item {
-    flex-basis: calc(100% / 4);
-    text-align: center;
-}
 
-.category-item img {
-    width: 100%;
-}
+
 
 /*  Main | Food Category */
 
