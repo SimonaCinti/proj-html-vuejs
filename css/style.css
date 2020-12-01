@@ -66,6 +66,15 @@ p {
     background-color: #2a542a;
 }
 
+.btn.btn-small {
+    padding: 10px 0 10px;
+}
+
+.btn.btn-small-white{
+    padding: 10px 0 10px;
+    width: 300px;
+}
+
 /* Template for items x4 */
 
 .main-container .category-item,
@@ -381,7 +390,7 @@ nav {
     left: 0;
     background-color: rgba(12, 11, 11, 0.447);
     width: 100%;
-    height: 440px;
+    height: 100%;
     content: '';
 }
 
@@ -544,7 +553,6 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 50px;
-    padding: 10px;
 }
 
 /* MAIN | view all */
@@ -554,4 +562,43 @@ nav {
     background:#1e3120;
     margin-top: 100px;
     background-image: url("../img/bg-transparent-3.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.view-all-wrapper {
+    height: 400px;
+    flex-basis: 50%;
+    position: relative;
+}
+
+.view-all-wrapper::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(12, 11, 11, 0.258);
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+
+.view-all-wrapper  img {
+    width: 100%;
+    height: 100%;
+}
+
+.services {
+    color: #978f88;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.services i {
+    color: white;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.services .service {
+    flex-basis: calc(100% / 3 - 100px);
 }
