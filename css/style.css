@@ -268,8 +268,15 @@ nav {
     transition: all 1s;
 }
 
+.text {
+   transition: all 1s; 
+}
+
 .food-item:hover {
     transform: scale(1.1);
+}
+.food-item:hover .text {
+    transform: scale(0.9090909090909091);
 }
 
 .food-item img {
