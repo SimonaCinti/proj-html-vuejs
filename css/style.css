@@ -157,8 +157,59 @@ nav {
     background-image: url("../img/bg-transparent-3.png");
     color: white;
     font-size: 14px;
+    position: relative;
+}
+/*  Jumbotron | Eyecatch */
+.jumbotron .eyecatch {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    z-index: 2;
 }
 
+.eyecatch .demos,
+.eyecatch .sales {
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: white;
+    color: #35697c;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.eyecatch .demos p {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.eyecatch .demos i {
+    font-size: 20px;
+}
+
+.eyecatch .sales p {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    line-height: initial;
+}
+
+.eyecatch .sales .discount {
+    color: #59b742;
+    font-size: 26px;
+    position: relative;
+}
+
+.eyecatch .sales .discount::before {
+    content: '$';
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: -10px
+}
+
+/* Jumbotron | Introduction */
 .jumbotron-introduction { 
     width: 80%;
     margin: auto;
