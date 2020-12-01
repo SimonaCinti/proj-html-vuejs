@@ -77,10 +77,23 @@ p {
 
 /* Template for items x4 */
 
-.main-container .category-item,
+/* .main-container .category-item,
 .main-container .best-item {
-    flex-basis: calc(100% / 4);
+    flex-basis: calc(100% / 4 - 10px);
     text-align: center;
+} */
+
+.main-container .category-item, 
+.main-container .best-item {
+	flex-basis: calc(100% / 4 - 10px);
+	text-align: center;
+	border: 1px solid black;
+	
+}
+
+.main-container .category-item:not(:last-child),
+.main-container .best-item:not(:last-child){
+    margin-right: 10px;
 }
 
 .category-item img,
@@ -587,6 +600,10 @@ nav {
     height: 100%;
 }
 
+.view-all-wrapper > .title-arrivals {
+    width: 100%;
+}
+/* MAIN | Services */
 .services {
     color: #978f88;
     text-align: center;
@@ -602,3 +619,4 @@ nav {
 .services .service {
     flex-basis: calc(100% / 3 - 100px);
 }
+
