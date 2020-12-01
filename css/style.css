@@ -469,3 +469,34 @@ nav {
 }
 
 /* Main | Join Newsletter */
+.newsletter-container{
+    height: 440px;
+    background-image: url("../img/banner-7-2x-scaled.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+	width: 90%;
+	margin: 0px auto;
+    position: relative;
+    padding: 50px;
+    top: -100px;  
+}
+
+.newsletter-text,
+.newsletter-input  {
+    width: 600px;
+    margin: 50px 0;
+}
+
+.newsletter-input {
+    margin-top: 15px;
+}
+
+.newsletter-container input {
+    width: 65%;
+    padding: 0px 30px;
+    border-radius: 100px;
+    background-color: #f3f4f3;
+    outline: none;
+    border: none;
+}
