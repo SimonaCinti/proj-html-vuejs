@@ -366,7 +366,7 @@ nav {
 /* Main | New Weekly Arrivals */
 
 .new-arrivals {
-    height: 540px;
+    height: 440px;
     background-image: url("../img/banner-3-2x-scaled.jpg");
     background-size: cover;
     position: relative;
@@ -378,7 +378,7 @@ nav {
     left: 0;
     background-color: rgba(12, 11, 11, 0.447);
     width: 100%;
-    height: 540px;
+    height: 440px;
     content: '';
 }
 
@@ -432,7 +432,6 @@ nav {
 /* Main | Testimonials */
 
 .testimonials {
-    height: 540px;
     background:#1e3120;
     background-image: url("../img/bg-transparent-3.png");
     background-repeat: repeat-x;
@@ -441,5 +440,29 @@ nav {
 }
 
 .user-testimonials {
-    margin-top: 50px;
+    padding: 50px;
+}
+
+.user .avatar {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.user-container .user {
+    margin-right: 50px;
+}
+
+.user  p{
+    margin-top: 20px;
+}
+
+.user  p:nth-child(3){
+    color: #978f88;
+}
+
+.user .avatar  img {
+    width: 100%;
 }
