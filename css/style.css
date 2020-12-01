@@ -20,10 +20,13 @@ h1 {
     font-size: 40px;
 }
 
-h2 {
-    font-family: 'Trocchi', serif;
+h2, h3 {
     font-size: 32px;
     margin-bottom: 15px;
+}
+
+h3 {
+    color: white;
 }
 
 p {
@@ -33,7 +36,7 @@ p {
 /* Utilities */
 
 
-.btn-white {
+.btn {
     color: black;
     padding: 15px 10px;
     background-color: white;
@@ -41,6 +44,11 @@ p {
     text-align: center;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.btn.btn-green {
+    background-color: #3d6f42;
+    color: white;
 }
 
 /* Header  | nav container*/
@@ -224,6 +232,11 @@ nav {
     height: 120px;/*! debug*/
 }
 
+.category-container,
+.food-container {
+    margin-bottom: 150px;
+}
+
 .browser-category {
     font-size: 18px;
     width: 60%;
@@ -232,12 +245,34 @@ nav {
     left: 50%;
     transform: translateX(-50%);
 }
-/*  Main | Arrival items */
-.main-container .arrival-item {
+/*  Main | Category*/
+.main-container .category-item {
     flex-basis: calc(100% / 4);
     text-align: center;
 }
 
-.arrival-item img {
+.category-item img {
     width: 100%;
+}
+
+/*  Main | Food Category */
+
+.food-container .food-item {
+    flex-basis: calc(100% / 3 - 10px);
+    margin-right: 10px;
+    padding: 50px 0px;
+    background: #1e3120;
+    background-image: url("../img/bg-transparent-3.png");
+    background-repeat: repeat-x;
+    text-align: center;
+
+}
+
+.food-item img {
+    width: 70%;
+}
+
+.food-item p {
+    color: #59b742;
+    font-size: 17px;
 }
