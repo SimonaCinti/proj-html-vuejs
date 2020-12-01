@@ -326,14 +326,17 @@ nav {
 /*  Main | Food Category */
 
 .food-container .food-item {
-    flex-basis: calc(100% / 3 - 20px);
-    margin-right: 20px;
+    flex-basis: calc(100% / 3);
     padding: 50px 0px;
     background: #1e3120;
     background-image: url("../img/bg-transparent-3.png");
     background-repeat: repeat-x;
     text-align: center;
     transition: all 1s;
+}
+
+.food-container .food-item:not(:last-child){ 
+    margin-right: 20px
 }
 
 .text {
@@ -508,4 +511,26 @@ nav {
 }
 .blog-title p {
     color: #77ab82;
+    margin-bottom: 20px;
+}
+
+.blog-item {
+    flex-basis: calc(100% / 4 - 30px);
+}
+.blog-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.blog-item img{
+    width: 100%;
+}
+
+.blog-item p{
+    margin-top: 10px;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.blog-item p.date{
+    font-size: 12px;
 }
