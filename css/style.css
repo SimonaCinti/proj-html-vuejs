@@ -10,6 +10,10 @@ body {
 
 /* Typography */
 
+.text-center {
+    text-align: center;
+}
+
 .bold {
     font-weight: bold;
 }
@@ -48,10 +52,6 @@ p.price {
     color: black;
 }
 
-.blog-title,
-.arrival-title {
-    text-align: center;
-}
 .blog-title p,
 .arrival-title p {
     color: #77ab82;
@@ -97,8 +97,8 @@ p.price {
 
 .main-container .category-item, 
 .main-container .best-item {
-	flex-basis: calc(100% / 4 - 10px);
-	text-align: center;	
+    flex-basis: calc(100% / 4 - 10px);
+    text-align: center;
 }
 
 .main-container .category-item:not(:last-child),
@@ -349,7 +349,6 @@ nav {
 .browser-category {
     font-size: 18px;
     width: 60%;
-    text-align: center;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -423,7 +422,6 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
     color: white;
 }
 
@@ -471,7 +469,6 @@ nav {
     background:#1e3120;
     background-image: url("../img/bg-transparent-3.png");
     background-repeat: repeat-x;
-    text-align: center;
     color: white;
 }
 
@@ -645,7 +642,6 @@ nav {
 /* MAIN | Services */
 .services {
     color: #978f88;
-    text-align: center;
     padding-top: 50px;
 }
 
@@ -697,4 +693,8 @@ footer {
 footer .main-container{
     padding: 50px 0;
     border-bottom: 1px solid #7c7c72;
+}
+
+footer .address img {
+    margin-bottom: 15px;
 }
