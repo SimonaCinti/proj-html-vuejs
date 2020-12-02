@@ -728,3 +728,37 @@ footer .address img {
     border: none;
     margin: 25px 0
 }
+
+/*  FOOTER | TOP : list */
+
+footer .footer-list,
+footer .social-list {
+    list-style: none;
+}
+
+footer .footer-list li {
+    margin-top: 25px;
+}
+
+.footer-list li a,
+.social-list li a {
+    text-decoration: none;
+    color:#dcd5d0;
+    font-size: 18px;
+}
+
+.social-list li:first-child a{
+    color: white;
+}
+/*  FOOTER | Social */
+.social-list{
+    margin-top: 40px
+}
+
+.social-list li {
+    margin-right: 25px;
+}
+
+.social-list i {
+    font-size: 24px;
+}

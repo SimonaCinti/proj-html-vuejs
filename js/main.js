@@ -49,6 +49,90 @@ var app = new Vue({
             },
 
         ],
+        // Shop by brand Links
+        shops: [
+            {
+                name: 'Bed',
+                link: '#'
+            },
+            {
+                name: 'Food',
+                link: '#'
+            },
+            {
+                name: 'Toys',
+                link: '#'
+            },
+            {
+                name: 'Transport',
+                link: '#'
+            },
+        ],
+        // Useful links
+        links: [
+            {
+                name: 'My account',
+                link: '#'
+            },
+            {
+                name: 'orders',
+                link: '#'
+            },
+            {
+                name: 'Checkout',
+                link: '#'
+            },
+            {
+                name: 'Cart',
+                link: '#'
+            },
+        ],
+        // Section Footer
+        footerNavs: [
+            {
+                name: 'Home',
+                link: '#'
+            },
+            {
+                name: 'About',
+                link: '#'
+            },
+            {
+                name: 'Blog',
+                link: '#'
+            },
+            {
+                name: 'Contact',
+                link: '#'
+            },
+            {
+                name: 'Shop',
+                link: '#'
+            },
+        ],
+        // Social Link
+        socials: [
+            {
+                name: 'Facebook',
+                link: 'https://it-it.facebook.com/',
+                icon: 'fab fa-facebook-f'
+            }, 
+            {
+                name: 'Twitter',
+                link: 'https://twitter.com/login?lang=it',
+                icon: 'fab fa-twitter',
+            },
+            {
+                name: 'Instagram',
+                link: 'https://www.instagram.com/',
+                icon: 'fab fa-instagram',
+            },
+            {
+                name: 'Youtube',
+                link: 'https://www.youtube.com/',
+                icon: 'fab fa-youtube',
+            },
+        ],
         // Data email for newsletter
         subscribe: '',
     }, // <<< end Data
