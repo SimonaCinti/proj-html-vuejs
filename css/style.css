@@ -695,6 +695,36 @@ footer .main-container{
     border-bottom: 1px solid #7c7c72;
 }
 
+footer .list p,
+footer .links p,
+.subscribe p:first-child{
+    font-size: 24px;
+}
+
 footer .address img {
     margin-bottom: 15px;
+}
+
+.address,
+.list,
+.links,
+.subscribe {
+    flex-basis: calc(100% / 4 - 15px);
+}
+
+.subscribe {
+    background-color: #264229;
+    background-image: url("../img/bg-transparent-3.png");
+    background-repeat: repeat-x;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.subscribe input {
+    padding: 10px 0 10px 30px;
+    border-radius: 100px;
+    background-color: #f3f4f3;
+    outline: none;
+    border: none;
+    margin: 25px 0
 }
