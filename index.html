@@ -400,12 +400,12 @@
                 </div>
                 <div class="subscribe">
                     <p>Subscribe to our newsletter</p>
-                    <input type="text" placeholder="Insert your email...*">
-                    <div class="btn btn-green">Subscribe</div>
+                    <input @keyup.enter="subEmail"type="text" v-model="subscribe" placeholder="Insert your email...*">
+                    <div @click="subEmail"class="btn btn-green">Subscribe</div>
                 </div>
             </div>
             <!-- Footer Social -->
-
+            <div class="main-container flex"></div>
             <!-- Footer Credits -->
         </footer>
     </div>

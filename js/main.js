@@ -3,6 +3,7 @@ console.log('hello', Vue);
 var app = new Vue({
     el: '#app',
     data: {
+        // Array Menu Nav Bar
         sections: [
             {
                 name: 'Home',
@@ -47,7 +48,16 @@ var app = new Vue({
                 ],
             },
 
-        ]
+        ],
+        // Data email for newsletter
+        subscribe: '',
+    }, // <<< end Data
+    methods: {
+        // subscribe to newsletter
+        subEmail(){
+            alert('Email inviata al seguente indirizzo: ' + this.subscribe)
+        }
     }
+
     
 })
