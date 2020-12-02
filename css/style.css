@@ -6,6 +6,7 @@ box-sizing: border-box;
 
 body {
     font-family: 'Work Sans', sans-serif; 
+    cursor: default;
 }
 
 /* Typography */
@@ -48,8 +49,12 @@ p.price {
 
 /* Utilities */
 
-.black {
+.text-black {
     color: black;
+}
+
+.text-white {
+    color: white;
 }
 
 .blog-title p,
@@ -790,8 +795,4 @@ footer .footer-list li {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     text-align: center;
-}
-
-.menu-up a {
-    color: white;
 }
