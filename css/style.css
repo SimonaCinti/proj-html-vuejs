@@ -220,9 +220,9 @@ nav {
 }
 /*  Jumbotron | Eyecatch */
 .jumbotron .eyecatch {
-    position: absolute;
+    position: fixed;
     right: 15px;
-    top: 10px;
+    top: 50px;
     z-index: 2;
 }
 
@@ -610,7 +610,7 @@ nav {
 /* MAIN | view all */
 
 .view-all {
-    height: 540px;
+    height: 600px;
     background:#1e3120;
     margin-top: 100px;
     background-image: url("../img/bg-transparent-3.png");
@@ -662,7 +662,7 @@ nav {
 /* MAIN | New Products Arrival */
 
 .arrival-item {
-    flex-basis: calc(100% / 3 - 10px);
+    flex-basis: calc(100% / 3 - 20px);
     text-align: center;
 }
 
@@ -679,6 +679,11 @@ nav {
 
 .row-1 .arrival-item:nth-child(3):after {
     position: absolute;
-    content: 'LOREM TO DO';
+    content: "Sale!";
+    color: white;
+    background: #3d6f42;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 55%;
     top: 0;
 }
