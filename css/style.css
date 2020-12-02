@@ -102,11 +102,6 @@ p.price {
     text-align: center;
 }
 
-.main-container .category-item:not(:last-child),
-.main-container .best-item:not(:last-child){
-    margin-right: 10px;
-}
-
 .category-item img,
 .best-item img,
 .container-img img {
@@ -537,10 +532,6 @@ nav {
     margin-top: 25px;
 }
 
-.user-container .user {
-    margin-right: 50px;
-}
-
 .user  p{
     margin-top: 20px;
 }
@@ -596,9 +587,6 @@ nav {
 
 .blog-item {
     flex-basis: calc(100% / 4 - 30px);
-}
-.blog-item:not(:last-child){
-    margin-right: 30px;
 }
 
 .blog-item img{
