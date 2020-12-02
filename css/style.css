@@ -687,3 +687,14 @@ nav {
     border-radius: 55%;
     top: 0;
 }
+
+/* FOOTER */
+footer {
+    background-color: #1e3120;
+    color: white;
+}
+
+footer .main-container{
+    padding: 50px 0;
+    border-bottom: 1px solid #7c7c72;
+}
