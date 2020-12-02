@@ -59,6 +59,7 @@ p.price {
 }
 
 /*  Buttons  */
+
 .btn {
     color: black;
     padding: 15px 10px;
@@ -110,6 +111,57 @@ p.price {
 .best-item img {
     width: 100%;
 }
+
+/* UTILITIES | Image overlay */
+
+.container-img {
+    position: relative;
+    width: 100%;
+}
+
+.container-img .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a6604484;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-img .text-plus {
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.container-img .text-plus-center {
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-img .text-plus-center i {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.container-img .text-plus p:nth-child(2){
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.container-img:hover .img-overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
 
 /* Header  | nav container*/
 
@@ -552,40 +604,6 @@ nav {
     width: 100%;
 }
 
-.container-img {
-    position: relative;
-    width: 100%;
-}
-
-.container-img .img-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #a6604484;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.container-img .text-plus {
-    color: white;
-    font-weight: 900;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-}
-
-.container-img .text-plus p:nth-child(2){
-    font-weight: normal;
-    font-size: 12px;
-}
-
-.container-img:hover .img-overlay{
-    opacity: 1;
-    cursor: pointer;
-}
 
 .blog-item p{
     margin-top: 10px;
