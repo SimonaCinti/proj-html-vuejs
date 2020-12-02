@@ -38,7 +38,15 @@ p {
     line-height: 1.6;
 }
 
+p.price {
+    color: #77ab82;
+}
+
 /* Utilities */
+
+.black {
+    color: black;
+}
 
 .blog-title,
 .arrival-title {
@@ -656,4 +664,21 @@ nav {
 .arrival-item {
     flex-basis: calc(100% / 3 - 10px);
     text-align: center;
+}
+
+.row-1 .arrival-item:nth-child(3) p:nth-child(3):before{   content: '$29.00';
+    color: black;
+    text-decoration: line-through;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.row-1 .arrival-item:nth-child(3){
+    position: relative;
+}
+
+.row-1 .arrival-item:nth-child(3):after {
+    position: absolute;
+    content: 'LOREM TO DO';
+    top: 0;
 }
