@@ -40,7 +40,17 @@ p {
 
 /* Utilities */
 
+.blog-title,
+.arrival-title {
+    text-align: center;
+}
+.blog-title p,
+.arrival-title p {
+    color: #77ab82;
+    margin-bottom: 20px;
+}
 
+/*  Buttons  */
 .btn {
     color: black;
     padding: 15px 10px;
@@ -76,12 +86,6 @@ p {
 }
 
 /* Template for items x4 */
-
-/* .main-container .category-item,
-.main-container .best-item {
-    flex-basis: calc(100% / 4 - 10px);
-    text-align: center;
-} */
 
 .main-container .category-item, 
 .main-container .best-item {
@@ -530,13 +534,7 @@ nav {
     flex-wrap: wrap;
 }
 
-.blog-title {
-    text-align: center;
-}
-.blog-title p {
-    color: #77ab82;
-    margin-bottom: 20px;
-}
+
 
 .blog-item {
     flex-basis: calc(100% / 4 - 30px);
@@ -581,9 +579,8 @@ nav {
 
 .container-img:hover .img-overlay{
     opacity: 1;
+    cursor: pointer;
 }
-
-
 
 .blog-item p{
     margin-top: 10px;
@@ -654,3 +651,9 @@ nav {
     flex-basis: calc(100% / 4 - 100px);
 }
 
+/* MAIN | New Products Arrival */
+
+.arrival-item {
+    flex-basis: calc(100% / 3 - 10px);
+    text-align: center;
+}
