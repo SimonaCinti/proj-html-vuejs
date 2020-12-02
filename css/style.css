@@ -615,6 +615,6 @@ nav {
 }
 
 .services .service {
-    flex-basis: calc(100% / 3 - 100px);
+    flex-basis: calc(100% / 4 - 100px);
 }
 
