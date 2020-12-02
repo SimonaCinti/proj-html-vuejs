@@ -721,6 +721,7 @@ footer .address img {
 }
 
 .subscribe input {
+    width: 200px;
     padding: 10px 0 10px 30px;
     border-radius: 100px;
     background-color: #f3f4f3;
@@ -768,4 +769,22 @@ footer .footer-list li {
 .credits {
     padding: 30px 0;
     background: #000;
+    position: relative;
+}
+
+.menu-up {
+	position: absolute;
+	bottom: 0;
+	padding: 10px 20px;
+	right: 50px;
+	font-size: 25px;
+	background: #2e2e2e;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+.menu-up a {
+    color: white;
 }
