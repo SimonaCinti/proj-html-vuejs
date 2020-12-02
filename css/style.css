@@ -108,7 +108,8 @@ p.price {
 }
 
 .category-item img,
-.best-item img {
+.best-item img,
+.container-img img {
     width: 100%;
 }
 
