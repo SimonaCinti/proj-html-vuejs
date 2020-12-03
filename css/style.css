@@ -47,6 +47,15 @@ p.price {
     color: #77ab82;
 }
 
+ul { 
+    list-style: none;
+}
+
+
+img {
+    width: 100%;
+}
+
 /* Utilities */
 
 .text-black {
@@ -109,13 +118,6 @@ p.price {
 .main-container .best-item {
     flex-basis: calc(100% / 4 - 10px);
     text-align: center;
-}
-
-.category-item img,
-.best-item img,
-.container-img img,
-.container-img  {
-    width: 100%;
 }
 
 /* UTILITIES | Image overlay */
@@ -467,7 +469,6 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
 }
 
 .title-arrivals h2 {
@@ -535,10 +536,6 @@ nav {
 
 .user  p:nth-child(3){
     color: #978f88;
-}
-
-.user .avatar  img {
-    width: 100%;
 }
 
 /* Main | Join Newsletter */
@@ -711,7 +708,12 @@ footer .address img {
 .list,
 .links,
 .subscribe {
-    flex-basis: calc(100% / 4 - 15px);
+    flex-basis: calc(100% / 4 - 40px);
+}
+
+.address,
+.list{
+    padding-left: 40px;
 }
 
 .subscribe {
@@ -733,11 +735,6 @@ footer .address img {
 }
 
 /*  FOOTER | TOP : list */
-
-footer .footer-list,
-footer .social-list {
-    list-style: none;
-}
 
 footer .footer-list li {
     margin-top: 25px;
@@ -783,5 +780,4 @@ footer .footer-list li {
     color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    text-align: center;
 }
