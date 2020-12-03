@@ -63,6 +63,10 @@ p.price {
     margin-bottom: 20px;
 }
 
+.relative {
+    position: relative;
+}
+
 /*  Buttons  */
 
 .btn {
@@ -109,16 +113,12 @@ p.price {
 
 .category-item img,
 .best-item img,
-.container-img img {
+.container-img img,
+.container-img  {
     width: 100%;
 }
 
 /* UTILITIES | Image overlay */
-
-.container-img {
-    position: relative;
-    width: 100%;
-}
 
 .container-img .img-overlay {
     position: absolute;
@@ -206,10 +206,6 @@ nav {
     border: none;
 }
 
-.box.input {
-    position: relative;
-}
-
 .box.input i {
     position: absolute;
     font-size: 14px;
@@ -269,7 +265,6 @@ nav {
     background-image: url("../img/bg-transparent-3.png");
     color: white;
     font-size: 14px;
-    position: relative;
 }
 /*  Jumbotron | Eyecatch */
 .jumbotron .eyecatch {
@@ -310,7 +305,6 @@ nav {
 .eyecatch .sales .discount {
     color: #59b742;
     font-size: 26px;
-    position: relative;
 }
 
 .eyecatch .sales .discount::before {
@@ -346,7 +340,6 @@ nav {
     background-size: cover;
     height: 600px;
     width: 100%;
-    position: relative;
 }
 
 .jumbotron .main-title::after{
@@ -456,7 +449,6 @@ nav {
     height: 440px;
     background-image: url("../img/banner-3-2x-scaled.jpg");
     background-size: cover;
-    position: relative;
 }
 
 .new-arrivals::after{
@@ -558,7 +550,6 @@ nav {
     background-size: cover;
 	width: 90%;
 	margin: 0px auto;
-    position: relative;
     padding: 50px 50px 0 50px;
     top: -100px;  
 }
@@ -630,7 +621,6 @@ nav {
 .view-all-wrapper {
     height: 400px;
     flex-basis: 50%;
-    position: relative;
 }
 
 .view-all-wrapper::after {
@@ -781,7 +771,6 @@ footer .footer-list li {
 .credits {
     padding: 30px 0;
     background: #000;
-    position: relative;
 }
 
 .menu-up {
