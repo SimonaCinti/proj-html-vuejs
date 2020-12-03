@@ -112,16 +112,16 @@
             <!--  Categories -->
             <section class="main-container flex column"> 
                 <div class="category-container flex justify-between">
-                    <div class="category-item"> <img src=".\img\product-9-300x300.jpg" alt="">
+                    <div class="category-item"> <img src=".\img\product-9-300x300.jpg" alt="product-9">
                         <p>Bed (1)</p>
                     </div>
-                    <div class="category-item"> <img src=".\img\product-3-300x300.jpg" alt="">
+                    <div class="category-item"> <img src=".\img\product-3-300x300.jpg" alt="product-3">
                         <p>Food (6)</p>
                     </div>
-                    <div class="category-item"> <img src=".\img\product-2-300x300.jpg" alt="">
+                    <div class="category-item"> <img src=".\img\product-2-300x300.jpg" alt="product-2">
                         <p>Toys (6)</p>
                     </div>
-                    <div class="category-item"> <img src=".\img\product-4-300x300.jpg" alt="">
+                    <div class="category-item"> <img src=".\img\product-4-300x300.jpg" alt="product-4">
                         <p>Transport (6)</p>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                         <div class="text flex column align-center">
                             <h3>Kibble</h3>
                             <p>Dry dog Food</p>
-                            <img src=".\img\food-transparent-18-400x420.png" alt="">
+                            <img src=".\img\food-transparent-18-400x420.png" alt="food-type-1">
                             <div class="btn btn-green">Shop Dry Food</div>  
                         </div>    
                     </div>
@@ -139,7 +139,7 @@
                         <div class="text flex column align-center">
                             <h3>Moist</h3>
                             <p>Canned dog food</p>
-                            <img src=".\img\food-transparent-17-400x420.png" alt="">
+                            <img src=".\img\food-transparent-17-400x420.png" alt="food-type-2">
                             <div class="btn btn-green">Shop moist food</div> 
                         </div>         
                     </div>
@@ -147,7 +147,7 @@
                         <div class="text flex column align-center">
                             <h3>Frozen</h3>
                             <p>Freeze-Dried dog food</p>
-                            <img src=".\img\food-transparent-16-400x420.png" alt="">
+                            <img src=".\img\food-transparent-16-400x420.png" alt="food-type-3">
                             <div class="btn btn-green">Shop frozen food</div>   
                         </div>
                         
@@ -280,7 +280,7 @@
                 <div class="blog-container flex justify-between">
                     <div class="blog-item flex column">
                         <div class="container-img relative">
-                            <img src="./img/blog-1-400x400.jpg" alt="blog-entry-1">
+                            <img class="height100" src="./img/blog-1-400x400.jpg" alt="blog-entry-1">
                             <div class="img-overlay">
                                 <div class="text-plus">
                                     <p>How to 'loose leash walk' your dog</p> 
@@ -293,7 +293,7 @@
                     </div>
                     <div class="blog-item flex column">
                         <div class="container-img relative">
-                            <img src="./img/blog-2-400x400.jpg" alt="blog-entry-2">
+                            <img class="height100" src="./img/blog-2-400x400.jpg" alt="blog-entry-2">
                             <div class="img-overlay">
                                 <div class="text-plus">
                                     <p>Stop cats from scratching furniture</p>
@@ -306,7 +306,7 @@
                     </div>
                     <div class="blog-item flex column">
                         <div class="container-img relative">
-                            <img src="./img/blog-3-400x400.jpg" alt="blog-entry-3">
+                            <img class="height100" src="./img/blog-3-400x400.jpg" alt="blog-entry-3">
                             <div class="img-overlay">
                                 <div class="text-plus">
                                     <p>Where to buy the best pet food</p>
@@ -319,7 +319,7 @@
                     </div>
                     <div class="blog-item flex column">
                         <div class="container-img relative">
-                            <img src="./img/blog-4-400x400.jpg" alt="blog-entry-4">
+                            <img class="height100" src="./img/blog-4-400x400.jpg" alt="blog-entry-4">
                             <div class="img-overlay">
                                 <div class="text-plus">
                                     <p>Proper care for your pet toys</p>
@@ -494,8 +494,8 @@
                 </div>
                 <div class="subscribe flex column justify-center">
                     <p>Subscribe to our newsletter</p>
-                    <input @keyup.enter="subEmail"type="text" v-model="subscribe" placeholder="Insert your email...*">
-                    <div @click="subEmail"class="btn btn-green">Subscribe</div>
+                    <input @keyup.enter="subEmail" type="text" v-model="subscribe" placeholder="Insert your email...*">
+                    <div @click="subEmail" class="btn btn-green">Subscribe</div>
                 </div>
             </div>
             <!-- Footer Social -->
@@ -519,7 +519,7 @@
             <div class="credits relative text-center">
                 <p>© Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress</p>
                 <div class="menu-up">
-                    <a class="text-white"href="#app"><i class="fas fa-chevron-up"></i></a>
+                    <a class="text-white" href="#app"><i class="fas fa-chevron-up"></i></a>
                 </div>
             </div>               
         </footer>

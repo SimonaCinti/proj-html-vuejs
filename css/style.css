@@ -76,6 +76,9 @@ img {
     position: relative;
 }
 
+.height100 {
+    height: 100%;
+}
 /*  Buttons  */
 
 .btn {
@@ -163,6 +166,42 @@ img {
 .container-img:hover .img-overlay{
     opacity: 1;
     cursor: pointer;
+}
+
+/* UTILITIES | discount per section*/
+
+/* ITEMS EVERYONE LOVES DISCOUNT*/
+
+.best-item:nth-child(3) p:nth-child(3):before {
+    content: '$35.00';
+    text-decoration: line-through;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* ARRIVAL DISCOUNT */
+
+.row-1 .arrival-item:nth-child(3) p:nth-child(3):before{   
+    content: '$29.00';
+    color: black;
+    text-decoration: line-through;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.row-1 .arrival-item:nth-child(3){
+    position: relative;
+}
+
+.row-1 .arrival-item:nth-child(3):after {
+    position: absolute;
+    content: "Sale!";
+    color: white;
+    background: #3d6f42;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 55%;
+    top: 0;
 }
 
 
@@ -502,12 +541,7 @@ nav {
     flex-basis: 100%;
 }
 
-.best-item:nth-child(3) p:nth-child(3):before {
-    content: '$35.00';
-    text-decoration: line-through;
-    font-size: 12px;
-    margin-right: 5px;
-}
+
 /* Main | Testimonials */
 
 .testimonials {
@@ -576,16 +610,9 @@ nav {
     flex-wrap: wrap;
 }
 
-
-
 .blog-item {
     flex-basis: calc(100% / 4 - 30px);
 }
-
-.blog-item img{
-    width: 100%;
-}
-
 
 .blog-item p{
     margin-top: 10px;
@@ -631,8 +658,8 @@ nav {
 }
 
 .view-all-wrapper  img {
-    width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .view-all-wrapper > .title-arrivals {
@@ -661,27 +688,6 @@ nav {
     text-align: center;
 }
 
-.row-1 .arrival-item:nth-child(3) p:nth-child(3):before{   content: '$29.00';
-    color: black;
-    text-decoration: line-through;
-    font-size: 12px;
-    margin-right: 5px;
-}
-
-.row-1 .arrival-item:nth-child(3){
-    position: relative;
-}
-
-.row-1 .arrival-item:nth-child(3):after {
-    position: absolute;
-    content: "Sale!";
-    color: white;
-    background: #3d6f42;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 55%;
-    top: 0;
-}
 
 /* FOOTER */
 footer {
