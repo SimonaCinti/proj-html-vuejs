@@ -9,43 +9,44 @@ var app = new Vue({
                 name: 'Home',
                 link: '#',
                 subMenu: [
-                    {
-                        nameMenu: 'lorem'
-
-                    },
+                    'Home - Alternate',
                 ],
+                isActive: false,
             },
             {
                 name: 'Shop',
                 link: '#',
                 subMenu: [
-                    {
-                        nameMenu: 'lorem'
-
-                    },
+                        'Shop no sidebar',
+                        'Shop single sidebar',
+                        'Shop dual sidebar',
                 ],
+                isActive: false,
             },
             {
                 name: 'About',
-                link: '#'
+                link: '#',
+                subMenu: [],
             },
             {
                 name: 'Blog',
-                link: '#'
+                link: '#',
+                subMenu: [],
             },
             {
                 name: 'Contact',
-                link: '#'
+                link: '#',
+                subMenu: [],
             },
             {
                 name: 'Shop by brand',
                 link: '#',
                 subMenu: [
-                    {
-                        nameMenu: 'lorem'
-
-                    },
+                            'Frozen',
+                            'Kibble',
+                            'Moist',
                 ],
+                isActive: false,
             },
 
         ],
@@ -137,6 +138,22 @@ var app = new Vue({
         subscribe: '',
     }, // <<< end Data
     methods: {
+        // Navigate nav top menu
+        toggleNav(index){
+            // Check if what you click is a menu
+            if (this.sections[index].isActive !== null){
+                // Check which is the menu open
+                this.sections[index].isActive = !this.sections[index].isActive;
+                // Close all the other menu
+                if (this.sections[index].isActive === true){
+                    for (i = 0; i < this.sections.length; i++){
+                        if (i !== index){
+                            this.sections[i].isActive = false;
+                        };
+                    };
+                };
+            };
+        },
         // subscribe to newsletter
         subEmail(){
             alert('Email inviata al seguente indirizzo: ' + this.subscribe)
@@ -144,4 +161,4 @@ var app = new Vue({
     }
 
     
-})
+});

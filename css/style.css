@@ -284,10 +284,26 @@ nav {
     display: flex;
     cursor: pointer;
     color: #7c7c72;
+    position: relative;
 }
 
 .container-nav .menu li a:focus{
     color: black;
+    font-weight: bold;
+}
+
+.menu li .sub-menu {
+    position: absolute;
+    background-color: white;
+    top: 48px;
+    left: 0;
+    z-index: 1;
+    width: 200px;
+}
+
+.menu li .sub-menu li:hover {
+    background-color: #1e3020;
+    color: white;
 }
 
 .container-nav .menu li a {
