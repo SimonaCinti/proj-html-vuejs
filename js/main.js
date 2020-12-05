@@ -12,6 +12,7 @@ var app = new Vue({
                     'Home - Alternate',
                 ],
                 isActive: false,
+                activeMenu: '',
             },
             {
                 name: 'Shop',
@@ -22,21 +23,25 @@ var app = new Vue({
                         'Shop dual sidebar',
                 ],
                 isActive: false,
+                activeMenu: '',
             },
             {
                 name: 'About',
                 link: '#',
                 subMenu: [],
+                activeMenu: '',
             },
             {
                 name: 'Blog',
                 link: '#',
                 subMenu: [],
+                activeMenu: '',
             },
             {
                 name: 'Contact',
                 link: '#',
                 subMenu: [],
+                activeMenu: '',
             },
             {
                 name: 'Shop by brand',
@@ -47,6 +52,7 @@ var app = new Vue({
                             'Moist',
                 ],
                 isActive: false,
+                activeMenu: '',
             },
 
         ],
@@ -145,11 +151,13 @@ var app = new Vue({
             if (this.sections[index].isActive !== null){
                 // Check which is the menu open
                 this.sections[index].isActive = !this.sections[index].isActive;
+                this.sections[index].activeMenu = 'active';
                 // Close all the other menu
                 if (this.sections[index].isActive === true){
                     for (i = 0; i < this.sections.length; i++){
                         if (i !== index){
                             this.sections[i].isActive = false;
+                            this.sections[i].activeMenu = '';
                         };
                     };
                 };
