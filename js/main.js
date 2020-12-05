@@ -147,8 +147,6 @@ var app = new Vue({
     methods: {
         // Navigate nav top menu
         toggleNav(index){
-            // Check if what you click is a menu
-            if (this.sections[index].isActive !== null){
                 // Check which is the menu open
                 this.sections[index].isActive = !this.sections[index].isActive;
                 this.sections[index].activeMenu = 'active';
@@ -161,7 +159,6 @@ var app = new Vue({
                         };
                     };
                 };
-            };
         },
         // subscribe to newsletter
         subEmail(){
