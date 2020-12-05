@@ -275,13 +275,8 @@ nav {
 
 /* Header | Nav Bottom */
 
-.container-nav .menu {
-    flex-basis: 80%;
-}
-
 .container-nav .menu li {
     padding: 15px;
-    display: flex;
     cursor: pointer;
     color: #7c7c72;
     position: relative;
@@ -295,7 +290,7 @@ nav {
 .menu li .sub-menu {
     position: absolute;
     background-color: white;
-    top: 49px;
+    top: 102%;
     left: 0;
     z-index: 1;
     width: 200px;
@@ -303,7 +298,7 @@ nav {
 }
 
 .menu li .sub-menu li:hover {
-    background-color: #1e3020;
+    background-color: #3d6f42;
     color: white;
 }
 

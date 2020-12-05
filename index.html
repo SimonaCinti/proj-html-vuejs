@@ -500,7 +500,8 @@
                 </div>
                 <div v-if="!isSubscribed"class="subscribe flex column justify-center">
                     <p>Subscribe to our newsletter</p>
-                    <input @keyup.enter="subEmail" type="text" v-model="subscribe" placeholder="Insert your email...*">
+                    <input @keyup.enter="subEmail" type="email"
+                    v-model="subscribe" placeholder="Insert your email...*">
                     <div @click="subEmail" class="btn btn-green">Subscribe</div>
                 </div>
                 <div v-else class="subscribe flex column justify-center">
