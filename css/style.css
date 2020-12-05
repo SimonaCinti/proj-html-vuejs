@@ -745,6 +745,7 @@ footer .address img {
     background-repeat: repeat-x;
     padding: 40px;
     border-radius: 20px;
+    min-height: 300px;
 }
 
 .subscribe input {

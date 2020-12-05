@@ -136,6 +136,7 @@ var app = new Vue({
         ],
         // Data email for newsletter
         subscribe: '',
+        isSubscribed: false,
     }, // <<< end Data
     methods: {
         // Navigate nav top menu
@@ -156,7 +157,8 @@ var app = new Vue({
         },
         // subscribe to newsletter
         subEmail(){
-            alert('Email inviata al seguente indirizzo: ' + this.subscribe)
+            // alert('Email inviata al seguente indirizzo: ' + this.subscribe);
+            this.isSubscribed = true;
         }
     }
 

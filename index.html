@@ -498,10 +498,17 @@
                         </li>
                     </ul>
                 </div>
-                <div class="subscribe flex column justify-center">
+                <div v-if="!isSubscribed"class="subscribe flex column justify-center">
                     <p>Subscribe to our newsletter</p>
                     <input @keyup.enter="subEmail" type="text" v-model="subscribe" placeholder="Insert your email...*">
                     <div @click="subEmail" class="btn btn-green">Subscribe</div>
+                </div>
+                <div v-else class="subscribe flex column justify-center">
+                    <div class="self-center text-center">
+                        <p>Thank you!</p>
+                        <p>Please check your email address</p>
+                        <p>{{subscribe}}</p>
+                    </div>              
                 </div>
             </div>
             <!-- Footer Social -->
