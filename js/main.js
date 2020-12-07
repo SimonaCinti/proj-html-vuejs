@@ -160,6 +160,10 @@ var app = new Vue({
         subEmail(){
             // alert('Email inviata al seguente indirizzo: ' + this.subscribe);
             this.isSubscribed = true;
+        },
+        // Scroll to top page
+        scrolltoTop() {
+            window.scrollTo(0, 0);
         }
     }
 

@@ -8,7 +8,10 @@ body {
     font-family: 'Work Sans', sans-serif; 
     cursor: default;
 }
-
+/*! Scroll behavior locked to scrolltoTop() */
+html {
+  scroll-behavior: smooth;
+}
 /* Typography */
 
 .text-center {
@@ -810,5 +813,6 @@ footer .footer-list li {
     color: white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    cursor: pointer;
 }
 
