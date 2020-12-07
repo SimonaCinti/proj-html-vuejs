@@ -291,7 +291,7 @@ nav {
     transition: all 0.3s linear;
 }
 
-li.active .fas.fa-chevron-down {
+ .fas.fa-chevron-down.active {
     transform: rotate(180deg);
     font-weight: bolder;
 }
