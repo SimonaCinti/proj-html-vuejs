@@ -287,6 +287,15 @@ nav {
     font-weight: bold;
 }
 
+.fas.fa-chevron-down{
+    transition: all 0.3s linear;
+}
+
+li.active .fas.fa-chevron-down {
+    transform: rotate(180deg);
+    font-weight: bolder;
+}
+
 .menu li .sub-menu {
     position: absolute;
     background-color: white;
@@ -802,3 +811,4 @@ footer .footer-list li {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+

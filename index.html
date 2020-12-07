@@ -51,7 +51,7 @@
                         @click="toggleNav(index)" :class="activeMenu === index ?'active' :''">
                             <a :href="section.link">
                                 {{section.name}}
-                                 <i v-if="section.subMenu.length > 0" class="fas fa-chevron-down"></i>  
+                                 <i v-if="section.subMenu.length > 0" class="fas fa-chevron-down"></i>
                             </a>
                             <ul class="sub-menu"v-if="section.subMenu.length > 0 && section.isActive" >
                                 <li v-for="item in section.subMenu">
