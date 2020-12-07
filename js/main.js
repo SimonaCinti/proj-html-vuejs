@@ -3,6 +3,8 @@ console.log('hello', Vue);
 var app = new Vue({
     el: '#app',
     data: {
+        //
+        activeMenu: 0,
         // Array Menu Nav Bar
         sections: [
             {
@@ -12,7 +14,6 @@ var app = new Vue({
                     'Home - Alternate',
                 ],
                 isActive: false,
-                activeMenu: '',
             },
             {
                 name: 'Shop',
@@ -23,25 +24,21 @@ var app = new Vue({
                         'Shop dual sidebar',
                 ],
                 isActive: false,
-                activeMenu: '',
             },
             {
                 name: 'About',
                 link: '#',
                 subMenu: [],
-                activeMenu: '',
             },
             {
                 name: 'Blog',
                 link: '#',
                 subMenu: [],
-                activeMenu: '',
             },
             {
                 name: 'Contact',
                 link: '#',
                 subMenu: [],
-                activeMenu: '',
             },
             {
                 name: 'Shop by brand',
@@ -52,7 +49,6 @@ var app = new Vue({
                             'Moist',
                 ],
                 isActive: false,
-                activeMenu: '',
             },
 
         ],
@@ -149,13 +145,13 @@ var app = new Vue({
         toggleNav(index){
                 // Check which is the menu open
                 this.sections[index].isActive = !this.sections[index].isActive;
-                this.sections[index].activeMenu = 'active';
+                // Check bolder for active menu
+                this.activeMenu = index;
                 // Close all the other menu
                 if (this.sections[index].isActive === true){
                     for (i = 0; i < this.sections.length; i++){
                         if (i !== index){
                             this.sections[i].isActive = false;
-                            this.sections[i].activeMenu = '';
                         };
                     };
                 };

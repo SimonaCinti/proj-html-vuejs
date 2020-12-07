@@ -48,7 +48,7 @@
                     <ul class="menu flex justify-center">
                         <li 
                         v-for="(section, index) in sections"
-                        @click="toggleNav(index)" :class="section.activeMenu">
+                        @click="toggleNav(index)" :class="activeMenu === index ?'active' :''">
                             <a :href="section.link">
                                 {{section.name}}
                                  <i v-if="section.subMenu.length > 0" class="fas fa-chevron-down"></i>  
